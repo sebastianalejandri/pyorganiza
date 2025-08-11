@@ -1,4 +1,4 @@
-Como o Código Funciona
+**Como o Código Funciona**
 
     import os e import shutil: Importamos as duas bibliotecas necessárias. os é usado para interagir com o sistema operacional (caminhos, diretórios) e shutil para operações de alto nível como mover arquivos.
 
@@ -15,3 +15,17 @@ Como o Código Funciona
     os.makedirs(pasta_destino, exist_ok=True): Cria a pasta de destino (ex: PDFs, Jpgs). O argumento exist_ok=True garante que o script não gere um erro se a pasta já existir.
 
     shutil.move(...): Move o arquivo do caminho original para o caminho de destino.
+
+
+**Como Usar o Script**
+
+    Salve o código: Copie o código acima e salve-o em um arquivo com extensão .py (ex: organizador.py).
+
+    Edite o caminho: No final do script, na linha pasta_a_organizar = ..., substitua o exemplo pelo caminho da pasta que você deseja organizar.
+
+    Execute o script: Abra o terminal (no Windows, pode ser o PowerShell ou o Prompt de Comando) e navegue até a pasta onde você salvou o arquivo. Execute-o com o comando:
+    Bash
+
+    python organizador.py
+
+O script irá então organizar todos os arquivos da pasta especificada, criando e movendo-os para as pastas correspondentes. 
